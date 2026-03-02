@@ -3,7 +3,7 @@ void display(int arr[],int n)
 {
     for(int i=0;i<n;i++)
     {
-        printf("%d\n"arr[i]);
+        printf("%d\n",arr[i]);
     }
     printf("\n");
 }
@@ -19,4 +19,13 @@ void insertion_sort(int arr[],int n)
             i--;
         }
     }
+}
+int main()
+{
+    int arr[]={10,56,16,24,2,20};
+    int n= sizeof(arr)/sizeof(arr[0]);
+    display(arr,n);
+    insertion_sort(arr,n);
+    display(arr,n);
+    return 0;
 }
